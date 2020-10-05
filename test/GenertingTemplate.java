@@ -19,12 +19,6 @@ import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfDocument;
 import com.lowagie.text.DocumentException;
 
-
-
-
-
-
-
 public class GenertingTemplate {
 	
 
@@ -62,6 +56,7 @@ public class GenertingTemplate {
 		context.setVariable("janashakthi", properties.getProperty("janashakthi"));
 		
 		System.out.println("janashakti:"+properties.getProperty("janashakthi"));
+		System.out.println("Git Changes to be done");
 		
 		String html=templateengine.process("test1", context);
 		
