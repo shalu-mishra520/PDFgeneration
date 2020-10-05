@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="styles.css" />
+   
+    <style>
+        
+        
+        @font-face {
+            font-family: 'T';
+            src: url('BaaminiPlain.ttf');
+        }
+        
+        .label {
+            font-family: 'T';
+            color: black;
+        }
+        
+       
+    </style>
+ 
+</head>
+<body>
+<div align="center">
+    <h1>Voter List</h1>
+   
+    <br/><br/>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                
+                <th>Name</th>
+                <th>Age</th>
+                <th>Orgnisation</th>
+                <th>panid</th>
+                <th>Janashakti</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                
+                <td th:text="${name}">Name</td>
+                <td th:text="${age}">Age</td>
+                <td th:text="${organisation}">Orgnisation</td>
+                <td th:text="${panid}">panid</td>
+                <td>
+                    <strong class="label">[[${janashakthi}]]</strong>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>   
+</body>
+</html>
